@@ -1,15 +1,12 @@
 // O(n)
 // Implementation of indexOf
-function linearSearch<T>(array: T[], needle: T) : number {
+function linearSearch<T>(array: T[], needle: T) : boolean {
   for(let i = 0; i < array.length; i++){
     if(array[i] === needle){
-      return i
+      return true
     }
   }
 
-  return -1
+  return false
 }
 
-
-console.log(linearSearch([1,2,3,4], 4))
-console.log(linearSearch(["a", "b", "c", "d"], "c"))
